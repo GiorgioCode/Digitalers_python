@@ -1,0 +1,31 @@
+header {
+    background-color: black;
+    color: beige;
+    padding: 10px;
+}
+
+h1 > span {
+    color: red;
+    background-color: blue;
+}
+
+section {
+    border-style: solid;
+    border-width: 2px;
+    padding: 3px;
+    border-color: brown;
+    background-color: brown;
+    border-radius: 10px;
+    margin: 5px;
+}
+
+article {
+    border-style: solid;
+    border-width: 2px;
+    padding: 3px;
+    border-color: rgb(212, 131, 131);
+    background-color: rgb(222, 194, 194);
+    color: rgb(33, 26, 26);
+    border-radius: 10px;
+    margin: 5px;
+}

@@ -1,0 +1,65 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: "Nunito Sans", sans-serif;
+}
+
+header {
+    background-color: rgb(23, 14, 63);
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 100;
+    color: rgb(197, 196, 252);
+    text-align: center;
+}
+.logotipo {
+    width: 100px;
+    height: 100px;
+    margin-left: 1rem;
+}
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.navbar ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.navbar li {
+    display: inline-block;
+    margin: 3px;
+}
+
+.navbar li a {
+    color: white;
+    text-decoration: none;
+    padding: 5px 10px;
+    border-width: 2px;
+    width: 3rem;
+    margin-right: 1rem;
+    border-style: solid;
+    border-color: rgba(0, 0, 0, 0.567);
+    background-color: rgb(35, 24, 155);
+    border-radius: 5px;
+}
+
+.navbar li a:hover {
+    color: rgb(21, 17, 33);
+    text-decoration: none;
+    padding: 5px 10px;
+    border-width: 2px;
+    border-style: solid;
+    border-color: black;
+    background-color: rgb(107, 109, 243);
+}
+
+main {
+    margin-top: 140px;
+    margin-inline: 10%;
+    width: 80%;
+}

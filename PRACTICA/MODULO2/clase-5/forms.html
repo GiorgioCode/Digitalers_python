@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario</title>
+</head>
+
+<body>
+    <form action="#" method="POST">
+
+        <!-- Input de texto con validación requerida y longitud máxima -->
+        <label for="nombre">Nombre:</label>
+        <input type="text" id="nombre" name="nombre" required maxlength="50" placeholder="Ingrese su nombre">
+
+        <!-- Input de correo electrónico con validación de formato y requerida -->
+        <label for="correo">Correo electrónico:</label>
+        <input type="email" id="correo" name="correo" required placeholder="nombre@ejemplo.com">
+
+        <!-- Input de número con validación de rango -->
+        <label for="edad">Edad (entre 18 y 99):</label>
+        <input type="number" id="edad" name="edad" min="18" max="99" step="1">
+
+        <!-- Input de contraseña con validación de longitud mínima -->
+        <label for="contrasena">Contraseña (mínimo 8 caracteres):</label>
+        <input type="password" id="contrasena" name="contrasena" required minlength="8">
+
+        <!-- Input de fecha con validación de fecha mínima y máxima -->
+        <label for="fecha_nacimiento">Fecha de Nacimiento:</label>
+        <input type="date" id="fecha_nacimiento" name="fecha_nacimiento" max="2005-01-01" required>
+
+        <!-- Radio buttons con validación requerida -->
+        <fieldset>
+            <legend>Género:</legend>
+            <input type="radio" id="genero_masculino" name="genero" value="masculino" required>
+            <label for="genero_masculino">Masculino</label>
+            <input type="radio" id="genero_femenino" name="genero" value="femenino">
+            <label for="genero_femenino">Femenino</label>
+            <input type="radio" id="genero_otro" name="genero" value="otro">
+            <label for="genero_otro">Otro</label>
+        </fieldset>
+
+        <!-- Checkbox con validación requerida -->
+        <input type="checkbox" id="suscripcion" name="suscripcion" required>
+        <label for="suscripcion">Suscribirse a nuestro boletín</label>
+
+        <!-- Select dropdown con validación requerida -->
+        <label for="pais">País:</label>
+        <select id="pais" name="pais" required>
+            <option value="" disabled selected>Seleccione un país</option>
+            <option value="argentina">Argentina</option>
+            <option value="brasil">Brasil</option>
+            <option value="chile">Chile</option>
+            <option value="mexico">México</option>
+            <option value="espana">España</option>
+        </select>
+
+        <!-- Textarea con validación de longitud máxima -->
+        <label for="comentarios">Comentarios (máximo 200 caracteres):</label>
+        <textarea id="comentarios" name="comentarios" rows="4" cols="40" maxlength="200"></textarea>
+
+        <!-- Submit button -->
+        <input type="submit" value="Enviar">
+
+    </form>
+
+    <!--
+        En este formulario, hemos aplicado las siguientes validaciones HTML5:
+
+required: Indica que el campo es obligatorio y no puede estar vacío.
+
+maxlength: Limita la longitud máxima del texto que se puede ingresar en el campo.
+
+email: Verifica que el campo de correo electrónico tenga un formato válido.
+
+number: Asegura que solo se puedan ingresar números.
+
+min y max: Establecen los valores mínimo y máximo permitidos para un campo numérico.
+
+date: Garantiza que la fecha seleccionada sea en un formato válido.
+
+minlength: Establece la longitud mínima del texto que se puede ingresar en el campo.
+
+pattern: Permite especificar una expresión regular para validar el contenido del campo (no se ha utilizado en este ejemplo).
+    -->
+</body>
+
+</html>

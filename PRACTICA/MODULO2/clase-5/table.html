@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Ejemplo de Tabla HTML</title>
+    <style>
+        table {
+            border-collapse: collapse;
+        }
+
+        th,
+        td {
+            border: 1px solid rgb(228, 26, 26);
+            padding: 8px;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Ejemplo de Tabla HTML</h1>
+    <table>
+        <caption>Información de Usuarios</caption>
+        <tr>
+            <th>Nombre</th>
+            <th>Edad</th>
+            <th colspan="2">Contacto</th>
+        </tr>
+        <tr>
+            <td rowspan="2">Juan Pérez</td>
+            <td>30</td>
+            <td>Email: juan@example.com</td>
+            <td>Teléfono: 555-1234</td>
+        </tr>
+        <tr>
+            <!-- Espacio vacío en la columna de Nombre debido a la unión de celdas -->
+            <td>Teléfono: 555-5678</td>
+            <td>Dirección: Calle 123, Ciudad</td>
+        </tr>
+        <tr>
+            <td>María Gómez</td>
+            <td>25</td>
+            <td>Email: maria@example.com</td>
+            <td>Teléfono: 555-9876</td>
+        </tr>
+    </table>
+
+    <!--
+        En este ejemplo, hemos creado una tabla que muestra información de usuarios. Hemos utilizado las siguientes etiquetas y atributos:
+
+table: Crea la tabla y define su estructura.
+caption: Define el título o descripción de la tabla.
+tr: Define una fila en la tabla.
+th: Define una celda de encabezado (utilizada para las cabeceras de las columnas).
+td: Define una celda de datos (utilizada para los valores en la tabla).
+colspan: Especifica la cantidad de columnas que una celda ocupa horizontalmente.
+rowspan: Especifica la cantidad de filas que una celda ocupa verticalmente.
+En el ejemplo, hemos utilizado colspan="2" para combinar dos celdas en la fila de Contacto, creando una única celda que abarca dos columnas (Email y Teléfono) en lugar de dos celdas separadas. Además, hemos utilizado rowspan="2" en la celda de Nombre para que ocupe dos filas en lugar de una.
+    -->
+</body>
+
+</html>
