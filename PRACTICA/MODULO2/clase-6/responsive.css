@@ -1,0 +1,32 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+
+.box {
+    width: 200px;
+    height: 200px;
+    margin: 20px auto;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Media query para pantallas pequeñas (máximo 768px) */
+@media screen and (max-width: 768px) {
+    .box {
+        background-color: #f1c40f; /* Amarillo en pantallas pequeñas */
+        width: 100px;
+        height: 100px;
+    }
+}
+
+/* Media query para pantallas grandes (mínimo 769px) */
+@media screen and (min-width: 769px) {
+    .box {
+        background-color: #3498db; /* Azul en pantallas grandes */
+    }
+}
